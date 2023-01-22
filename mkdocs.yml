@@ -1,0 +1,135 @@
+site_name: DStruct
+site_description: DStruct, A guide to learn Data Structures and Algorithms.
+site_url: https://sanspace.in/dstruct/
+
+docs_dir: docs_src
+site_dir: docs
+
+nav:
+  - Home: index.md
+  - Programming:
+    - Programming: programming/intro.md
+    - Recursion: programming/recursion.md
+  - Complexity:
+    - Complexity: complexity/intro.md
+    - Big O: complexity/bigo.md
+  - Data Structures:
+    - Data Structures - Intro: data-structures/index.md
+    - Array: data-structures/array.md
+    - Stack: data-structures/stack.md
+    - Queue: data-structures/queue.md
+    - Linked List: data-structures/linkedlist.md
+    - Binary Tree: data-structures/binarytree.md
+    - Graph: data-structures/graph.md
+  - Algorithms:
+    - Algorithms: algorithms/intro.md
+    - Binary Search: algorithms/binarysearch.md
+  - About: about.md
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    # - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+  icon:
+    logo: material/library-shelves
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  favicon: images/favicon.ico
+  palette: 
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences 
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  analytics:
+    provider: google
+    property: G-MEQD07F5KT
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          # TODO: Add Github Issues link below. Refer https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#was-this-page-helpful
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://github.com/sanspace/dstruct/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/sanspace/dstruct
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/2sks
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/santhoshkumarsrinivasan
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@sanspace
+    - icon: fontawesome/solid/globe
+      link: https://sanspace.in
+
+
+
+repo_name: sanspace/dstruct
+repo_url: https://github.com/sanspace/dstruct
+edit_uri: ""
+
+copyright: Copyright &copy; 2023 DStruct
